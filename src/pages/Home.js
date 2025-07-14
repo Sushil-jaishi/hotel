@@ -1,7 +1,21 @@
-import React from 'react';
+import React from "react"
+//components
+import Rooms from "../components/Rooms.js"
+import BookForm from "../components/BookForm.js"
+import HeroSlider from "../components/HeroSlider.js"
 
 const Home = () => {
-  return <div>Home</div>;
-};
+  return (
+    <>
+      <HeroSlider />
+      <div className="container mx-auto relative ">
+        <div className="bg-accent/20 mt-4 p-4 lg:shadow-xl lg:absolute lg:left-0 lg:right-0 lg:p-0 lg:z-30 lg:-top-12">
+          <BookForm />
+        </div>
+      </div>
+      <Rooms />
+    </>
+  )
+}
 
-export default Home;
+export default Home
